@@ -25,6 +25,12 @@ namespace Met_0412
             Complex c2 = new Complex(1, 1);
             Console.WriteLine(c1 * c2);
 
+            Console.WriteLine("Домашнее задание 12.2");
+            Array<Book> library = new Array<Book>();
+            library.Add(new Book("Лучшее в нас", "Стивен Пинкер", "Альпина Нон Фикшен"));
+            library.Add(new Book("Биология добра и зла", "Роберт Сапольски", "Альпина Нон Фикшен"));
+            library.Sort(Array<Book>.byName);
+
             Console.ReadKey();
         }
     }
