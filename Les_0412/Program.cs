@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Les_0412
 {
@@ -10,6 +6,14 @@ namespace Les_0412
     {
         static void Main(string[] args)
         {
+            BankAccount bankAccount1 = new BankAccount(100);
+            bankAccount1.PutInBalance(100);
+            Console.WriteLine(bankAccount1[0]);
+
+            BuildingArray buildings = new BuildingArray();
+            buildings[0] = new Building();
+
+            Console.ReadLine();
         }
     }
 }
